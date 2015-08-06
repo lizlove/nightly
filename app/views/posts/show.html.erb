@@ -1,0 +1,50 @@
+<% if flash[:notice] %>
+  <div class="notice">
+    <%= flash[:notice] %></p>
+  </div>
+<% end %>
+
+<h3>Date: <%= @post.created_at.strftime("%m/%d/%Y") %></h3>
+
+Resentful at: <%= @post.resentful_at %> <br>
+Cause: <%= @post.cause %> <br>
+Affects my: <%= @post.affects_my %> <br>
+My part: <%= @post.my_part %><br>
+Was I selfish? <%= @post.selfish %> <br>
+Dishonest? <%= @post.dishonest %> <br>
+Afraid? <%= @post.afraid %> <br>
+Do I owe an apology? <%= @post.owe_an_apology %> <br>
+Have I kept something to myself I should I have shared with another person?<%= @post.kept_to_myself %> <br>
+Was I kind and loving towards all? <%= @post.kind_and_loving %> <br>
+What could I have done better?<%= @post.done_better %> <br>
+Was I thinking only of myself?<%= @post.thinking_of_myself %> <br>
+Or, was I thinking about what I could do for others? <%= @post.thinking_of_others %> <br>
+What character defects did I exhibit today?<%= @post.defects %> <br>
+For what am I grateful? <%= @post.gratitude %> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
