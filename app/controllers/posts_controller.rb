@@ -45,8 +45,8 @@ private
       @post = Post.find(params[:id])
     end
 
-    def post_params
-      params.require(:post).permit(:resentful_at, :cause, :affects_my, :my_part, :selfish, :dishonest, :afraid, :owe_an_apology, :kept_to_myself, :kind_and_loving, :done_better, :thinking_of_myself, :thinking_of_others, :defects, :gratitude, :user_id)
+    def user_params
+      params.require(:post).permit(:email, :sponsor_email)
     end
 
 
