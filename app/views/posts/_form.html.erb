@@ -1,5 +1,5 @@
 
-        <%= form_for @post do |f| %>
+        <%= form_for @user.post do |f| %>
         <!-- add flash notice for re-occuring triggers -->
             <%= f.label :resentful_at %>
             <%= f.text_area :resentful_at %><br>
@@ -46,6 +46,7 @@
             <%= f.label :gratitude %><br>
             <%= f.text_area :gratitude %><br>
             <br>
+            <%= f.hidden_field :user_id, :value => @user.id %>
             
             <%= f.submit 'Submit', :class => 'btn btn-primary' %>
 

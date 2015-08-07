@@ -8,11 +8,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="container">
-<div class="page-header">
-  <h1>Nightly Review</h1>
-</div>
+<nav>
+  <div class="page-header">
+    <h1>Nightly</h1>
+      <ul class="nav navbar-nav navbar-right">
+        <%= render 'layouts/registration_items' %>
+        <%= render 'layouts/login_items' %>
+      </ul>
+  </div>
+</nav>
 <p><em>When we retire at night, we constructively review our day.</em></p>
+
 
 <%= yield %>
 </div>

@@ -1,7 +1,11 @@
 <h3>Past Reviews</h3>
 <ul>
-<% @posts.each do |post| %>
-  <li><h4><%= link_to post.created_at.strftime("%m/%d/%Y"), post %></h4></li>
+<% if @user.posts %>
+  <% @user.posts.each do |post| %>
+    <li><h4><%= link_to post.created_at.strftime("%m/%d/%Y"), post %></h4></li>
+  <% end %>
+  <% else %>
+    <li><h4>No Posts Yet!</h4></li>  
 <% end %>
 </ul>
 <br>

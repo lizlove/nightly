@@ -124,8 +124,7 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-  width: 100%;
+  margin: 0
 }
 button {
   overflow: visible;
@@ -4327,9 +4326,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 21.5px 15px;
-  font-size: 20px;
-  line-height: 22px;
+  padding: 22px 15px;
+  font-size: 4em;
+  line-height: 40px;
   height: 65px;
 }
 .navbar-brand:hover,
@@ -4643,8 +4642,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #333333;
 }
 .navbar-inverse {
-  background-color: #ffffff;
   border-color: #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .navbar-inverse .navbar-brand {
   color: #333333;
@@ -5014,7 +5013,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #f7f7f7;
+  background-color: #F5F3F2;
 }
 .jumbotron h1,
 .jumbotron .h1 {
