@@ -1,12 +1,12 @@
 <h3>Past Reviews</h3>
 <ul>
-<% if @user.posts %>
+<% if @user.posts != nil%>
   <% @user.posts.each do |post| %>
     <li><h4><%= link_to post.created_at.strftime("%m/%d/%Y"), post %></h4></li>
   <% end %>
-  <% else %>
+<% else %>
     <li><h4>No Posts Yet!</h4></li>  
 <% end %>
 </ul>
 <br>
-<%= link_to 'New Review', new_post_path, :class => 'btn btn-default'%>
+<%= link_to 'New Review', new_user_post_path, :class => 'btn btn-default'%>

@@ -1,5 +1,5 @@
 
-        <%= form_for @user.post do |f| %>
+        <%= form_for( @post, url: new_user_post_path, html: {method: "post"}) do |f| %>
         <!-- add flash notice for re-occuring triggers -->
             <%= f.label :resentful_at %>
             <%= f.text_area :resentful_at %><br>
