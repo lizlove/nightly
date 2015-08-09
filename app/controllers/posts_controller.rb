@@ -1,4 +1,5 @@
   class PostsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -6,6 +7,7 @@
   end
 
   def show
+    @posts = User.find(params[:user_id]).posts.all
   end
 
   def new
@@ -17,7 +19,7 @@
   end
 
   def create
-    binding.pry
+    @user = User.find(params[:user_id])
     @post = Post.create(post_params) 
     redirect_to posts_path(@post)
   end
@@ -47,7 +49,7 @@ private
     end
 
     def post_params
-      params.require(:post).permit(:resentful_at, :cause, :affects_my, :my_part, :selfish, :dishonest, :afraid, :owe_an_apology, :kept_to_myself, :kind_and_loving, :done_better, :thinking_of_myself, :thinking_of_others, :defects, :gratitude, :user_id)
+      params.require(:post).permit(:id, :resentful_at, :cause, :affects_my, :my_part, :selfish, :dishonest, :afraid, :owe_an_apology, :kept_to_myself, :kind_and_loving, :done_better, :thinking_of_myself, :thinking_of_others, :defects, :gratitude, :user_id)
     end
 
 

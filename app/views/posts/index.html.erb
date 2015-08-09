@@ -2,7 +2,7 @@
 <ul>
 <% if @user.posts != nil%>
   <% @user.posts.each do |post| %>
-    <li><h4><%= link_to post.created_at.strftime("%m/%d/%Y"), post %></h4></li>
+    <li><h4><%= link_to post.created_at.strftime("%m/%d/%Y"), user_post_path(id: post.id) %></h4></li>
   <% end %>
 <% else %>
     <li><h4>No Posts Yet!</h4></li>  
