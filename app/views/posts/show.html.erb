@@ -4,23 +4,27 @@
   </div>
 <% end %>
 
+
 <h3>Date: <%= @post.created_at.strftime("%m/%d/%Y") %></h3>
 
-Resentful at: <%= @post.resentful_at %> <br>
-Cause: <%= @post.cause %> <br>
-Affects my: <%= @post.affects_my %> <br>
-My part: <%= @post.my_part %><br>
-Was I selfish? <%= @post.selfish %> <br>
-Dishonest? <%= @post.dishonest %> <br>
-Afraid? <%= @post.afraid %> <br>
-Do I owe an apology? <%= @post.owe_an_apology %> <br>
-Have I kept something to myself I should I have shared with another person?<%= @post.kept_to_myself %> <br>
-Was I kind and loving towards all? <%= @post.kind_and_loving %> <br>
-What could I have done better?<%= @post.done_better %> <br>
-Was I thinking only of myself?<%= @post.thinking_of_myself %> <br>
-Or, was I thinking about what I could do for others? <%= @post.thinking_of_others %> <br>
-What character defects did I exhibit today?<%= @post.defects %> <br>
-For what am I grateful? <%= @post.gratitude %> <br>
+<div class="well well-lg">
+  <p> <strong>Resentful at:</strong> <%= @post.resentful_at %> <br>
+  <strong>Cause:</strong> <%= @post.cause %> <br>
+  <strong>Affects my:</strong> <%= @post.affects_my %> <br>
+  <strong>My part:</strong> <%= @post.my_part %><br>
+  <strong>Was I selfish?</strong> <%= @post.selfish %> <br>
+  <strong>Dishonest?</strong> <%= @post.dishonest %> <br>
+  <strong>Afraid?</strong> <%= @post.afraid %> <br>
+  <strong>Do I owe an apology?</strong> <%= @post.owe_an_apology %> <br>
+  <strong>Have I kept something to myself I should I have shared with another person?</strong> <%= @post.kept_to_myself %> <br>
+  <strong>Was I kind and loving towards all? </strong><%= @post.kind_and_loving %> <br>
+  <strong>What could I have done better?</strong> <%= @post.done_better %> <br>
+  <strong>Was I thinking only of myself?</strong> <%= @post.thinking_of_myself %> <br>
+  <strong>Or, was I thinking about what I could do for others?</strong> <%= @post.thinking_of_others %> <br>
+  <strong>What character defects did I exhibit today?</strong> <%= @post.defects %> <br>
+  <strong>For what am I grateful?</strong> <%= @post.gratitude %> <br>
+  </p>
+</div>
 
 <%= link_to 'Back', user_posts_path, :class => 'btn btn-default'%>
 
