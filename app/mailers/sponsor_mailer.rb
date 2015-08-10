@@ -1,0 +1,2 @@
+class SponsorMailer < ApplicationMailer
+end
