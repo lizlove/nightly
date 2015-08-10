@@ -1,13 +1,12 @@
 == Nightly
 
-This application allows the user to compose nightly reviews and share them with a sponsor via email.
+This application allows the user to compose nightly reviews and share them with an accountability partner via email.
+Site will be hosted at Nightlyreview.org
 
-Things you may want to cover:
+Forthcoming edits:
 
-* Deployment instructions
+* Merging ActiveMailer branch
 
-* ...
+* Fixing routing issue for saving new posts. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
