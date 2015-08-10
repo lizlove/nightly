@@ -12,16 +12,23 @@
 
   def new
     @user = User.find(params[:user_id])
-    @post = Post.new
+    @post = Post.new(post_params)
   end
 
   def edit
   end
 
+
   def create
-    @user = User.find(params[:user_id])
-    @post = Post.create(post_params) 
-    redirect_to posts_path(@post)
+    binding.pry
+    @post = Post.new(post_params)
+    respond_to do |format|
+      if @post.save
+        format.html { redirect_to user_post_path(@post), notice: 'Post was successfully created.' }
+      else
+        format.html { render action: 'new' }
+      end
+    end
   end
 
   # def update

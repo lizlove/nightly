@@ -1,7 +1,7 @@
 <div class="well well-lg">
 <form class="form-horizontal">
       <legend>Review</legend>
-        <%= form_for( @post, url: new_user_post_path, html: {method: "post"}) do |f| %>
+        <%= form_for(@post, url: user_posts_path, method: "post") do |f| %>
         <!-- add flash notice for re-occuring triggers -->
       <div class="form-group">
             <%= f.label :resentful_at, class:"col-lg-2 control-label" %>
@@ -65,12 +65,11 @@
             <%= f.text_area :gratitude, class:"col-lg-9"  %><br>
       </div>
             <br>
-
             <%= f.hidden_field :user_id, :value => @user.id %>
       <div class="form-group">
       <div class="col-lg-9 col-lg-offset-2">
-            <%= link_to 'Cancel', user_posts_path, :class => 'btn btn-default'%>
-            <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+            <%= link_to 'Cancel', user_posts_path, class: 'btn btn-default'%>
+            <%= f.submit 'Submit', class: 'btn btn-primary' %>
       </div>
       </div>
     <% end %>
