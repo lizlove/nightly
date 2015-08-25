@@ -1,7 +1,6 @@
 <div class="well well-lg">
-<form class="form-horizontal">
       <legend>Review</legend>
-        <%= form_for(@post, url: user_posts_path, method: "post") do |f| %>
+        <%= form_for([@user, @post], url: user_posts_path, class: "form-horizontal") do |f| %>
         <!-- add flash notice for re-occuring triggers -->
       <div class="form-group">
             <%= f.label :resentful_at, class:"col-lg-2 control-label" %>
