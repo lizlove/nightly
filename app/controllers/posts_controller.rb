@@ -20,9 +20,10 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @user = User.find(params[:user_id])
     respond_to do |format|
       if @post.save
-        format.html { redirect_to user_post_path(@post), notice: 'Post was successfully created.' }
+        format.html { redirect_to user_post_path(@user, @post), notice: 'Post was successfully created.' }
       else
         format.html { render action: 'new' }
       end
@@ -32,7 +33,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
+      format.html { redirect_to user_posts_path, notice: 'Post was successfully destroyed.' }
     end
   end
 
