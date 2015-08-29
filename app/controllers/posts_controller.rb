@@ -23,6 +23,7 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     respond_to do |format|
       if @post.save
+        binding.pry
         format.html { redirect_to user_post_path(@user, @post), notice: 'Post was successfully created.' }
       else
         format.html { render action: 'new' }

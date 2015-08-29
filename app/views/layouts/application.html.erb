@@ -12,8 +12,9 @@
 <div class="container">
 <nav>
   <div class="page-header">
-    <h1>Nightly</h1>
+    <h1><%= link_to "Nightly", root_path %></h1>
       <ul class="nav navbar-nav navbar-right">
+        <%= render 'layouts/home_items' %>
         <%= render 'layouts/registration_items' %>
         <%= render 'layouts/login_items' %>
       </ul>
