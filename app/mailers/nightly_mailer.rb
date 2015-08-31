@@ -14,6 +14,6 @@ class NightlyMailer < ApplicationMailer
 
   def sponsor_nightly(post)
     @post = post
-    mail to: @user.sponsor_email, subject: "Nightly review"
+    mail to: @post.user.sponsor_email, subject: "Nightly review"
   end
 end

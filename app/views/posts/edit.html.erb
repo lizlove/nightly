@@ -1,0 +1,9 @@
+<% if flash[:notice] %>
+  <div class="notice">
+    <%= flash[:notice] %></p>
+  </div>
+<% end %>
+
+<h3>Edit Date: <%= @post.created_at.strftime("%m/%d/%Y") %></h3>
+
+<%= render 'form' %>

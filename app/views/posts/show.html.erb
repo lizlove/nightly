@@ -26,7 +26,7 @@
   </p>
 </div>
 
-<%= link_to 'Back', user_posts_path, :class => 'btn btn-default'%>  <%= link_to 'Destroy', user_post_path, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></p>
+<%= link_to 'Share with Sponsor', user_posts_path(@post.user), :class => 'btn btn-success'%>  <%= link_to 'Destroy', user_post_path, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %>  <%= link_to 'Done', user_posts_path(@post.user), :class => 'btn btn-default'%> 
 
 
 
