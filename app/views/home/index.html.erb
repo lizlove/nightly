@@ -3,11 +3,7 @@
   <h1 class="text-center">Welcome</h1>
   <p class="text-center">Nightly is a tool for drafting personal inventories and sharing them with an accountability partner.</p>
   <div class="text-center">
-    <% if user_logged_in? %>
-      <%= link_to('  Enter  ', user_posts_path(current_user.id), class: "btn btn-primary btn-lg") %><br>
-    <% else %>
-      <%= link_to('  Login  ', new_user_session_path, class: "btn btn-primary btn-lg") %><br>
-    <% end  %> 
+    <%= link_to('  Enter  ', new_user_session_path, class: "btn btn-primary btn-lg") %><br>
     <br>
     Not a Nightly User? 
     <%= link_to('Register', new_user_registration_path) %>
