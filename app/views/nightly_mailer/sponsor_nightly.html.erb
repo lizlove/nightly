@@ -1,7 +1,7 @@
 <h1>Nightly Review</h1>
 
 <h3>
-  From: <%= @post.user.email %>
+  From: <%= @post.user.email %>  
   Date: <%= @post.created_at.strftime("%m/%d/%Y") %>
 </h3>
 
@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td>Was I kind and loving towards all? </td>
-    <td>%= @post.kind_and_loving %> </td>
+    <td><%= @post.kind_and_loving %> </td>
   </tr>
   <tr>
     <td>What could I have done better?</td>

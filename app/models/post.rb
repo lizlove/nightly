@@ -6,6 +6,7 @@ class Post < ActiveRecord::Base
 
   def email_sponsor
     NightlyMailer.sponsor_nightly(self).deliver
+    @post = self
   end
 
 end

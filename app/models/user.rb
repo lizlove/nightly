@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   has_many :posts
-  devise :database_authenticatable, :registerable, :confirmable,
-         :recoverable, :rememberable, :validatable
+  devise :database_authenticatable, :confirmable, :recoverable, :registerable, :rememberable, :validatable
 
   private
 

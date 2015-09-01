@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     respond_to do |format|
       if @post.save
-        format.html { redirect_to user_post_path(@user, @post), notice: 'Post was successfully created and emailed to sponsor.' }
+        format.html { redirect_to user_post_path(@user, @post), notice: 'Post was successfully created and emailed to your action partner.' }
       else
         format.html { render action: 'new' }
       end
