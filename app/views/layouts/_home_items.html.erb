@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   <li>
-  <%= link_to('current_user', user_posts_path(current_user.id)) %>
+  <%= link_to('My Account', user_posts_path(current_user.id)) %>
   </li>
 <% else %>
   <li>
