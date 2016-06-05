@@ -1,76 +1,79 @@
 <div class="well well-lg">
       <legend>Review</legend>
-        <%= form_for([@user, @post], url: user_posts_path, :html => {:class => "form-horizontal"}) do |f| %>
-        <!-- add flash notice for re-occuring triggers -->
-      <div class="form-group">
-            <%= f.label :resentful_at, class:"col-lg-2 control-label" %>
-            <%= f.text_area :resentful_at, class:"col-lg-9" %><br>
-      </div>
-
-      <div class="form-group">
-            <%= f.label :cause, class:"col-lg-2 control-label" %>
-            <%= f.text_area :cause, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :affects_my, class:"col-lg-2 control-label" %>
-            <%= f.text_area :affects_my, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :my_part, class:"col-lg-2 control-label" %>
-            <%= f.text_area :my_part, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :selfish, class:"col-lg-2 control-label" %>
-            <%= f.text_area :selfish, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :dishonest, class:"col-lg-2 control-label" %>
-            <%= f.text_area :dishonest, class:"col-lg-9"   %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :afraid, class:"col-lg-2 control-label" %>
-            <%= f.text_area :afraid, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">    
-            <%= f.label :owe_an_apology, class:"col-lg-2 control-label" %>
-            <%= f.text_area :owe_an_apology, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :kept_to_myself, class:"col-lg-2 control-label" %>
-            <%= f.text_area :kept_to_myself, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :kind_and_loving, class:"col-lg-2 control-label" %>
-            <%= f.text_area :kind_and_loving, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :done_better, class:"col-lg-2 control-label" %>
-            <%= f.text_area :done_better, class:"col-lg-9" %> <br>
-      </div>
-      <div class="form-group">       
-            <%= f.label :thinking_of_myself, class:"col-lg-2 control-label" %>
-            <%= f.text_area :thinking_of_myself, class:"col-lg-9" %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :thinking_of_others, class:"col-lg-2 control-label" %>
-            <%= f.text_area :thinking_of_others, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-            <%= f.label :defects, class:"col-lg-2 control-label" %>
-            <%= f.text_area :defects, class:"col-lg-9"  %><br>
-      </div>
-      <div class="form-group">
-      <%= f.label :gratitude, class:"col-lg-2 control-label" %>
-            <%= f.text_area :gratitude, class:"col-lg-9"  %><br>
-      </div>
-            <br>
+      <%= form_for([@user, @post], url: user_posts_path, :html => {:class => "form"}) do |f| %>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :resentful_at %></span>
+                   <%= f.text_field :resentful_at, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :cause %></span>
+                   <%= f.text_field :cause, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :affects_my %></span>
+                   <%= f.text_field :affects_my, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :my_part %></span>
+                   <%= f.text_field :my_part, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :selfish %></span>
+                   <%= f.text_field :selfish, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :dishonest %></span>
+                   <%= f.text_field :dishonest, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :afraid %></span>
+                   <%= f.text_field :afraid, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :owe_an_apology %></span>
+                   <%= f.text_field :owe_an_apology, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :kept_to_myself %></span>
+                   <%= f.text_field :kept_to_myself, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :kind_and_loving %></span>
+                   <%= f.text_field :kind_and_loving, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :kept_to_myself %></span>
+                   <%= f.text_field :kept_to_myself, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :done_better %></span>
+                   <%= f.text_field :done_better, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :thinking_of_myself %></span>
+                   <%= f.text_field :thinking_of_myself, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :thinking_of_others %></span>
+                   <%= f.text_field :thinking_of_others, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :defects %></span>
+                   <%= f.text_field :defects, class:"form-control" %>
+            </div>
+            <div class="form-group input-group">
+                  <span class="input-group-addon" id="basic-addon1"><%= f.label :gratitude %></span>
+                   <%= f.text_field :gratitude, class:"form-control" %>
+            </div>
             <%= f.hidden_field :user_id, :value => @user.id %>
-      <div class="form-group">
-      <div class="col-lg-9 col-lg-offset-2">
-            <%= link_to 'Cancel', user_posts_path, class: 'btn btn-default'%>
-            <%= f.submit 'Submit', class: 'btn btn-primary' %>
-      </div>
-      </div>
-    <% end %>
-</form>
+            <div class="form-group input-group">
+                  <div class="container">
+                        <div class="row">
+                              <%= link_to 'Cancel', user_posts_path, class: 'btn btn-default'%> 
+                              <%= f.submit 'Submit', class: 'btn btn-primary' %>
+                        </div>
+                  </div>
+            </div>
+      <% end %>
+      </form>
 </div> <!-- well -->

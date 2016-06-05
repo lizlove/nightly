@@ -4,13 +4,13 @@ require File.expand_path('../application', __FILE__)
 # Initialize the Rails application.
 Rails.application.initialize!
 
-#configure ActionMailer for SendGrid
+#configure ActionMailer for MailGun
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'elovero',
-  :password => '4$undaY17',
-  :domain => 'my-nightly.com',
-  :address => 'smtp.sendgrid.net',
-  :port => 587,
+  :port           => 587,
+  :address        => "smtp.mailgun.org",
+  :domain         => ENV['domain'],
+  :user_name      => ENV['username'],
+  :password       => ENV['password'],
   :authentication => :plain,
-  :enable_starttls_auto => true
 }
+

@@ -5,8 +5,6 @@ Site will be hosted at Nightlyreview.org
 
 Forthcoming edits:
 
-* Merging ActiveMailer branch
-
-* Fixing routing issue for saving new posts. 
-
+* Bug fix for ActiveMailer messages
+* Responsive layout for mobile
 
