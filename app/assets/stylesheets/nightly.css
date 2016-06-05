@@ -1,5 +1,9 @@
+/*Additional CSS*/
 .entries {
     width: 75%;
     float: right;
     margin: 0 10px 0 0;
-  };
+  }
+.page-header h1, a{
+  color: black;
+}
