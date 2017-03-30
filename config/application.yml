@@ -3,3 +3,8 @@ domain: 'mg.nightlyreview.org'
 username: 'postmaster@mg.nightlyreview.org'
 password: '0c8ae85b3fedbc05999dcd0146f69724'
 nightly_admin_username: 'info@nightlyreview.org '
+
+SMTP_ADDRESS=smtp.mandrillapp.com
+SMTP_DOMAIN=localhost
+SMTP_PASSWORD=mandrill_api_key
+SMTP_USERNAME=mandrill_username

@@ -14,6 +14,6 @@ class User < ActiveRecord::Base
 
   def sponsor_add_notification
     NightlyMailer.sponsor_add(self).deliver
-  end 
+  end
 
 end
